@@ -7,46 +7,89 @@
     <title>HW1</title>
     <style>
         body {
-            background-color: rgb(164, 192, 173);
-            font-family: "Monaco", Times, serif;
+            background-color: rgb(201, 218, 206);
+            font-family: "Monaco";
+            margin: 20px 10px 20px 10px;
         }
-        div {
-            border-style: ridge;
+        .block {
+            text-align: center;
             display: inline-block;
-            padding: 10px 10px 10px 10px;
+            width: 250px;
+            height: 300px;
+            border: 2px solid;
+            border-radius: 3%;
+            padding: 20px;
+            margin: 5px;
+            background-color: rgb(149, 176, 157);
+        }
+        .blocks{
+            display: flex;
+            justify-content: space-around;
+        }
+        .heading{
+            display: block;
+            text-align: center;
+            padding: 5px 10px 5px 10px;
+
+        }
+        .contacts{
+            display: block;
+            text-align: center;
+            font-size: small;
+            margin-top: 100px;
+            padding: 5px 10px 5px 10px;
+
         }
         img {
-            height: 200px;
+            height: 150px;
         }
+        
     </style>
 </head>
 <body>
-    <h3>Топ 5 мемов</h3>
-    <h4>описывающие мое состояние</h4>
-    <div>
-        <img src="https://pbs.twimg.com/media/FWVO5H0VUAEeqSn?format=jpg&name=large" alt="cat with no encourage to work">
-        <h6>описывающие мое состояние</h6>
-        <p>kek</p>
+
+    <div class="heading">
+        <h1>Топ 5 мемов</h1>
+        <h4>описывающие мое состояние в эту осень</h4>
     </div>
-    <div>
-        <img src="https://i.redd.it/ofluaff98te51.jpg" alt="code">
-        <h6>описывающие мое состояние</h6>
-        <p>kek</p>
+        
+    <div class="blocks">
+        <div class="block">
+            <img src="https://pbs.twimg.com/media/FWVO5H0VUAEeqSn?format=jpg&name=large" alt="cat with no encourage to work">
+            <h6>типичное состояние после отпуска</h6>
+            <p>КОТПУСК</p>
+        </div>
+
+        <div class="block">
+            <img src="https://i.redd.it/ofluaff98te51.jpg" alt="code">
+            <h6>каждый раз, когда литкод пишет "Time Limit Exceeded"</h6>
+            <p>ПЕРЕДУМАЙ!</p>
+        </div>
+
+        <div class="block">
+            <img src="https://i.redd.it/8q1ojd7zpy161.jpg" alt="ignorable tasks">
+            <h6>когда думал что ошибка в задаче, а она оказалась в тебе</h6>
+            <p>ПРОБЛЕМА</p>
+        </div>
+
+        <div class="block">
+            <img src="https://media-exp1.licdn.com/dms/image/C4E22AQGp8B6WalBrVQ/feedshare-shrink_2048_1536/0/1663091598261?e=2147483647&v=beta&t=LJEm9ngoz56HDziXAh2n3jybHGpQ-Avf878jeL3_rnk" alt="zoom calls">
+            <h6>не смотря ни на что, я - </h6>
+            <p>✨ПРОДАКТ МЕНЕДЖЕР✨</p>
+        </div>
+
+        <div class="block">
+            <img src="https://sun9-85.userapi.com/impg/BqmZ_TySxQcH2pPLrjy5hu_LLiG2aXUTtMWWRw/15AWN3cAvis.jpg?size=573x429&quality=95&sign=564669b3c2fd55329a8e2e6eb2478b7a&type=album" alt="stabilitys">
+            <h6>когда задолжала амазону 300к</h6>
+            <p>POV</p>
+        </div>
     </div>
-    <div>
-        <img src="https://i.redd.it/8q1ojd7zpy161.jpg" alt="ignorable tasks">
-        <h6>описывающие мое состояние</h6>
-        <p>kek</p>
-    </div>
-    <div>
-        <img src="https://media-exp1.licdn.com/dms/image/C4E22AQGp8B6WalBrVQ/feedshare-shrink_2048_1536/0/1663091598261?e=2147483647&v=beta&t=LJEm9ngoz56HDziXAh2n3jybHGpQ-Avf878jeL3_rnk" alt="zoom calls">
-        <h6>описывающие мое состояние</h6>
-        <p>kek</p>
-    </div>
-    <div>
-        <img src="https://sun9-85.userapi.com/impg/BqmZ_TySxQcH2pPLrjy5hu_LLiG2aXUTtMWWRw/15AWN3cAvis.jpg?size=573x429&quality=95&sign=564669b3c2fd55329a8e2e6eb2478b7a&type=album" alt="stabilitys">
-        <h6>описывающие мое состояние</h6>
-        <p>kek</p>
+
+    <div class="contacts">
+        <h5>картинки были взяты с моего телеграм канала и с сообщений друзей, которые любят частенько брать меня как ГГ для мемов</h5>
+        <a href="https://www.instagram.com/aponchicw/">ссылка на instagram</a>
+        |
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">ссылка на телеграм-канал</a>
     </div>
 </body>
 </html>
