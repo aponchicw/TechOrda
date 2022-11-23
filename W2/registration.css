@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+body{
+  background: rgb(201, 218, 206);
+  font-family: 'PT Sans', sans-serif;
+}
+
+form{
+    width: 25%;
+}
+
+label{
+    display: flex;
+    justify-content: space-between;
+}
