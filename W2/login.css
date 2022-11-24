@@ -4,17 +4,15 @@ body{
   background: rgb(201, 218, 206);
   font-family: "Monaco";
   margin: 20px 10px 20px 10px;
+  align-items: center;
 }
 
-.container {
-    padding-left: 10px;
-}
-
-input[type=text], input[type=password] {
+input[type=email], input[type=password] {
     padding: 15px;
     margin: 5px 0 22px 0;
-    width: 100%;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 50%;
     border: none;
     background: #f1f1f1;
 }
@@ -32,13 +30,4 @@ input[type=text], input[type=password] {
   
 .login-btn:hover {
     opacity:1;
-}
-  
-a {
-    color: dodgerblue;
-}
-  
-.signin {
-    background-color: #f1f1f1;
-    text-align: center;
 }
