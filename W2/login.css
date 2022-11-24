@@ -19,12 +19,7 @@ input[type=text], input[type=password] {
     background: #f1f1f1;
 }
 
-fieldset {
-    display: flex;
-    justify-content: space-around;
-}
-
-.register-btn {
+.login-btn {
     background-color: rgb(84, 112, 93);
     color: white;
     padding: 16px 20px;
@@ -35,7 +30,7 @@ fieldset {
     opacity: 0.9;
 }
   
-.register-btn:hover {
+.login-btn:hover {
     opacity:1;
 }
   

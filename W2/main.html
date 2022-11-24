@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="heading">
+        <h2>Welcome to the SQL knowledge practice platform! </h2>
+    </div>
+    <hr>
+
+    <fieldset>
+        <h4>Task 1</h4>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>salary</th>
+                <th>managerId</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Joe</td>
+                <td>70000</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Henry</td>
+                <td>80000</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Sam</td>
+                <td>60000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Max</td>
+                <td>90000</td>
+                <td></td>
+            </tr>
+        </table>
+
+        <p>Each row of this table indicates the ID of an employee, their name, salary, and the ID of their manager.</p>
+        <dl>
+            <dt>id</dt>
+            <dd>- int. The primary key column for this table</dd>
+            <dt>name</dt>
+            <dd>- varchar</dd>
+            <dt>salary</dt>
+            <dd>- int</dd>
+            <dt>managerId</dt>
+            <dd>- int</dd>
+        </dl>
+        <hr>
+
+        <p>Write an SQL query to find the employees who earn more than their managers.</p>
+        <ul>
+            <li>Return the result table in any order.</li>
+            <li>The query result format is in the following example.</li>
+        </ul>
+        <h4>Example 1:</h4>
+        <img src="example.png">
+    </fieldset>
+    
+    <fieldset>
+        <label for="answer">Type the query as an answer: <input id="answer" type="text" required></label>
+    </fieldset>
+
+    <h4>More information and examples of solutions can be found here:</h4>
+    <ol>
+        <li><a href="https://learnsql.com/blog/top-online-sql-courses-2022/#:~:text=1.-,LearnSQL.com,-From%20the%20start">LearnSQL.com</a></li>
+        <li><a href="https://learnsql.com/blog/top-online-sql-courses-2022/#:~:text=2.-,DataCamp,-This%20learning%20platform">DataCamp</a></li>
+        <li><a href="https://learnsql.com/blog/top-online-sql-courses-2022/#:~:text=3.-,Dataquest,-Like%20DataCamp%2C%20Dataquest">Dataquest</a></li>
+        <li><a href="https://learnsql.com/blog/top-online-sql-courses-2022/#:~:text=4.-,Pluralsight,-This%20platform%20underlines">Pluralsight</a></li>            <li><a href="https://learnsql.com/blog/top-online-sql-courses-2022/#:~:text=5.-,SQLZOO,-This%20learning%20platform">SQLZOO</a></li>
+    </ol>
+    <hr>
+
+    <div class="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Task 2 ></button>
+    </div>
+</body>
+</html>

@@ -4,9 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+
     <title>Login</title>
 </head>
 <body>
-    
+    <form action="main.html">
+        <div class="container">
+            <h1>Sign in</h1>
+        <hr>
+        
+        <label for="email"><input id="email" type="email" placeholder="email@gmail.com" required></label>    
+        <label for="password">Password<input id="password" type="password" required></label>
+        </div>
+        <label for="accept">
+            <input id="accept" type="checkbox" required>
+            Save user
+        </label>
+        <a href="main.html">
+            <button type="submit" class="login-btn">Sign in</button>
+        </a>
+    </form>
 </body>
 </html>

@@ -9,36 +9,36 @@
     <title>Registration</title>
 </head>
 <body>
-    <form>
+    <form action="login.html">
         <div class="container">
-            <h1>Регистрация</h1>
-        <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+            <h1>Registration</h1>
+        <p>Please complete this form to create an account.</p>
         <hr>
-        <label for="name">Имя <input id="name" type="text" required></label>
-        <label for="surname">Фамилия <input id="surname" type="text" required></label>
+        <label for="name">Name <input id="name" type="text" required></label>
+        <label for="surname">Surname <input id="surname" type="text" required></label>
         <fieldset>
             <div>
-                <label for="female"><input id="female" type="radio" name="gender"> Женщина</label>
-                <label for="male"><input id="male" type="radio" name="gender"> Мужчина</label>
+                <label for="female"><input id="female" type="radio" name="gender"> Female</label>
+                <label for="male"><input id="male" type="radio" name="gender"> Male</label>
             </div>
-            <label for="bdate">Дата рождения <input id="bdate" type="date" required></label>
-            <label for="number">Номер телефона <input id="number" type="tel" placeholder="8(777)8787887" required></label>
-            <label for="email">Email адрес <input id="email" type="email" placeholder="email@gmail.com" required></label>    
+            <label for="bdate">Birth date <input id="bdate" type="date" required></label>
+            <label for="number">Phone number <input id="number" type="tel" placeholder="8(777)8787887" required></label>
+            <label for="email">Email address <input id="email" type="email" placeholder="email@gmail.com" required></label>    
         </fieldset>
-        <label for="password">Пароль <input id="password" type="password" required></label>
-        <label for="password-rep">Повторите пароль <input id="password-rep" type="password" required></label>
+        <label for="password">Password <input id="password" type="password" required></label>
+        <label for="password-rep">Repeat password <input id="password-rep" type="password" required></label>
         <label for="accept">
             <input id="accept" type="checkbox" required>
-            Подтверждаю, что ознакомился(-ась) с тем, что вся указанная мною информация может быть использована ее Величеством Алтынай с целью отправки мне сообщений рекламного характера через электронную почту и SMS.
+            I confirm that I have read and understood that all the information I have provided may be used by Her Majesty Altynay to send me promotional emails and SMS.
         </label>
         </div>
         
-        <a type="button" href="login.html">
-            <button type="submit" class="register-btn">Зарегистрироваться</button>
+        <a href="login.html">
+            <button type="submit" class="register-btn">Sign up</button>
         </a>
         
         <div class="container signin">
-            <p>У вас уже есть аккаунт? <a href="login.html">Войти</a></p>
+            <p>Already have an account? <a href="login.html">Sign in.</a></p>
         </div>
     </form>
 </body>

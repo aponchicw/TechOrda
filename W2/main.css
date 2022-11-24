@@ -1,0 +1,83 @@
+body {
+    background-color: rgb(201, 218, 206);
+    font-family: "Monaco";
+    margin: 20px 10px 20px 10px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid  rgb(84, 112, 93);
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: rgb(84, 112, 93);
+}
+
+.block {
+    text-align: center;
+    /* display: inline-block; */
+    width: 250px;
+    height: 300px;
+    border: 2px solid;
+    border-radius: 3%;
+    padding: 20px;
+    margin: 5px;
+    background-color: rgb(149, 176, 157);
+}
+.blocks{
+    display: flex;
+    justify-content: space-around;
+}
+.heading{
+    display: block;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+
+}
+.contacts{
+    display: block;
+    text-align: center;
+    font-size: small;
+    margin-top: 100px;
+    padding: 5px 10px 5px 10px;
+
+}
+img {
+    height: 300px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    background-color: rgb(84, 112, 93);
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    opacity: 0.9;
+}
+  
+button:hover {
+    opacity:1;
+}
+
+input[type=text] {
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    width: 95%;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
