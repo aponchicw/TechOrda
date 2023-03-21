@@ -1,0 +1,95 @@
+.keyboard{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.key{
+    height: 70px;
+    width: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.key::before,
+.key > .key-border{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: inherit;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+.key::before{
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 40%);
+    z-index: 3;
+}
+.key > .key-border{
+    background: radial-gradient(500px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.6), transparent 10%);
+    z-index: 1;
+}
+
+#keyboard:hover > .key > .key-border{
+    opacity: 1;
+}
+
+.key:hover::before{
+    opacity: 1;
+}
+
+.key:active::before{
+    transition: .1s;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.key > .key-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    background-color: rgba(23, 23, 23);
+    border-radius: inherit;
+    position: relative;
+    z-index: 2;
+}
+
+#delete > .key-content{
+    background-color: rgb(184, 4, 4);
+    transition: .3s;
+
+}
+#delete:hover > .key-content{
+    background-color: rgb(236, 17, 17);
+
+}
+#delete:active::before{
+    background-color: rgba(163, 0, 0, 0.663);
+}
+#calculate > .key-content {
+    background-color: rgb(0, 178, 12);
+    transition: .3s;
+}
+#calculate:hover > .key-content{
+    background-color: rgb(14, 218, 27);
+}
+
+#calculate{
+    grid-column: span 2;
+    width: 140px;
+}
+
+.active-angle{
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 800;
+}

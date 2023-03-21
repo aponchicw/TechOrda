@@ -1,0 +1,28 @@
+@import "./keyboard.css";
+@import "./display.css";
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Work Sans', sans-serif;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+}
+.app{
+    min-height: 100vh;
+    position: relative;
+}
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
