@@ -1,0 +1,14 @@
+#gender{
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+.checkbox-input{
+    display: flex;
+    margin-bottom: 1rem;
+}
+#agreement{
+    margin-left: 1rem;
+}
+.modal-footer{
+    text-align: center;
+}

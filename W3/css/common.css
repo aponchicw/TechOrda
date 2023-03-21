@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    outline: none;
+}
+
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+    background-color: rgb(198, 229, 207);
+}
+.container{
+    min-height: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.modal-window{
+    background-color: #fff;
+    padding: 15px 30px;
+    border-radius: 8px;
+    min-width: 500px;
+    width: 40vw;
+    margin: 0 auto;
+}
+.modal-container{
+    margin: 8px 0;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.modal-container > *{
+    margin: 8px 0;
+}
+.modal-header > *{
+    color: rgb(40, 111, 61);
+    text-align: center;
+    padding: 0 1rem;
+    margin-bottom: 8px;
+}
+
+.input_field-container{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+}
+.input_field-container > label{
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.input_field-container > input{
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(241, 241, 241);
+    padding: 12px;
+    font-size: 14px;
+    transition: outline .2s ease;
+}
+.input_field-container > input:focus{
+    outline: 2px solid rgb(76, 180, 107);
+    background-color: #fff;
+}
+
+button{
+    border: none;
+    color: #fff;
+    background-color: rgb(58, 146, 85);
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 1rem;
+}
