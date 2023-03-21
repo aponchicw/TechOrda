@@ -1,0 +1,112 @@
+
+.fetch-control{
+    height: 100%;
+    width: 30%;
+    overflow-y: auto;
+}
+
+
+.fetch-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+.form-field{
+    position: relative;
+    height: 4rem;
+    width: 5rem;
+    margin: 0.5rem;
+}
+.form-field-container{
+    margin-bottom: 1rem;
+}
+.form-field-wrap{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.form-field-title{
+    text-align: center;
+    color: var(--dark);
+}
+.form-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+}
+
+.radio-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    transition: all .3s;
+}
+
+.radio-title img{
+    font-size: 3rem;
+}
+.radio-title label{
+    color: var(--primary-color);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+input:checked + .radio-title{
+    background-color: var(--primary-color);
+}
+
+input:hover + .radio-title{
+    box-shadow: 0 0 10px var(--primary-color);
+}
+
+input:checked + .radio-title img
+{
+    filter: var(--white-filter);
+}
+input:checked + .radio-title label{
+    color: white;
+
+}
+
+
+.radio-label{
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    vertical-align: middle;
+    color: var(--dark);
+}
+
+.fetch-button{
+    padding: .8rem;
+}
+
+.sub-description{
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #b0b7bd;
+    width: 100%;
+    margin-left: 10px;
+}
+
+#error{
+    display: none;
+    color: red;
+    margin-top: 8px;
+    margin-left: 6px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+}

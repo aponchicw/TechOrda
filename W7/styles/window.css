@@ -1,0 +1,49 @@
+@import url("./control_panel.css");
+@import url("./fetch_control.css");
+@import url("./fetch_result.css");
+
+.window{
+    min-width: 500px;
+    width: 90%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow:
+    0px 0px 6.3px rgba(0, 0, 0, 0.021),
+    0px 0px 17.5px rgba(0, 0, 0, 0.03),
+    0px 0px 42.2px rgba(0, 0, 0, 0.039),
+    0px 0px 140px rgba(0, 0, 0, 0.06);
+}
+
+.window-body{
+    background-color: #fff;
+    transition: .5s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.window-content{
+    background-color: #f3f3f3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.window-content#collapsed{
+    height: 0%;
+}
+.window-content#collapsed > *{
+    height: 0%;
+    display: none;
+}
+.window-content#expanded{
+    padding: 1rem .5rem;
+    height: 80vh;
+}
+.fetch-window{
+    display: flex;
+    height: 100%;
+}
+.fetch-divider{
+    border: 1px solid rgba(160, 160, 160, 0.5);
+}
+
+

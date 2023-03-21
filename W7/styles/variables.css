@@ -1,0 +1,8 @@
+:root{
+    --background-color: #edf2f7;
+    --primary-color: #318cfc;
+    --radio-color: #A7B2BD;
+    --grey: #f3f3f3;
+    --white-filter: brightness(0) invert(1);
+    --dark: #555;
+}
