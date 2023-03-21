@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/file.css">
+    <script src="./js/file_upload.js" defer></script>
+    <title>File Upload</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h2 class="title">File Uploader</h2>
+        </header>
+    </div>
+    <div class="secret">
+        <button onclick="location.href='index.html'" class="btn back-to-index">Back to main page</button>
+    </div>
+
+    <div class="container main">
+        <h2 id="upload-text">Upload files</h2>
+        <button id="open-modal" class="button button2 btn ">Upload File</button>
+    </div>
+
+    <div id="scammed">
+        <div class="container">
+            <div id="scam-photos"></div>
+        </div>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 style="text-align: center;">Browse Files to Upload</h2>
+            </div>
+            <div class="modal-body">
+                <div id="entertain-message">
+                    <div class="container">
+                        <h2 id="upload-message"></h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <input type="file" id="file" name="file">
+                    <button id="upload" class="upload">Upload File</button>
+                </div>
+                <div id="error-message">
+                    <div class="container red">
+                        <h3>Please upload file</h3>
+                    </div>
+                </div>
+                <div id="success-message">
+                    <div class="container green">
+                        <h3>File uploaded successfully</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

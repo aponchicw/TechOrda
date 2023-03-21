@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/face_blur.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix@2.0"></script>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>Background blur</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content" style="flex-direction: row;">
+            <div class="frame_1">
+                <div class="frame_title">Original</div>
+                <video class="video" width="512" height="512"></video>
+            </div>
+            <div class="frame_2">
+                <div class="frame_title">Blurred</div>
+                <canvas class="canvas" width="512" height="512"></canvas>
+            </div>
+        </div>
+        <div class="control-panel">
+            <button class="control-button" id="pause">Pause</button>
+            <button class="control-button" id="unpause">Unpuase</button>
+        </div>
+
+        <button class="previous">Back to main page</button>
+    </div>
+</body>
+</html>
