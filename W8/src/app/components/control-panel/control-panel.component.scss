@@ -1,0 +1,71 @@
+.window-control{
+    background-color: #a9a9a9;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 4vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+.app-name{
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+}
+.control-buttons{
+    height: inherit;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.control-buttons > *{
+    margin-left: 6px;
+}
+.control-button{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    border: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    outline: none;
+
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    margin-left: -30px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+#collapse, #expand{
+    background-color: #22ff00;
+}
+
+#collapse:hover, #expand:hover{
+    background-color: #20e601;
+}
+#collapse:active, #expand:active{
+    background-color: #1cd500;
+}

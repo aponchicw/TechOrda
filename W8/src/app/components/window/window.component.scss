@@ -1,0 +1,114 @@
+.window{
+    min-width: 500px;
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: 10px;
+    box-shadow:
+    0px 0px 6.3px rgba(0, 0, 0, 0.021),
+    0px 0px 17.5px rgba(0, 0, 0, 0.03),
+    0px 0px 42.2px rgba(0, 0, 0, 0.039),
+    0px 0px 140px rgba(0, 0, 0, 0.06);
+}
+
+.window-body{
+    background-color: #fff;
+    transition: .5s;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.window-content{
+    background-color: #f3f3f3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.window-content#collapsed{
+    height: 0%;
+}
+.window-content#collapsed > *{
+    height: 0%;
+    display: none;
+}
+.window-content#expanded{
+    padding: 1rem .5rem;
+    height: 80vh;
+}
+.fetch-window{
+    display: flex;
+    height: 100%;
+}
+.fetch-results{
+    width: 70%;
+}
+.fetch-control{
+    height: 100%;
+    width: 30%;
+}
+.fetch-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.form-field-container{
+    margin-bottom: 1rem;
+}
+.form-field-wrap{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.form-field-title{
+    text-align: center;
+    color: var(--dark);
+}
+
+
+.fetch-button{
+    padding: .8rem;
+}
+
+.sub-description{
+    margin-top: 6px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #b0b7bd;
+    width: 100%;
+    margin-left: 10px;
+}
+
+#error{
+    display: none;
+    color: red;
+    margin-top: 8px;
+    margin-left: 6px;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+}
+input[type="text"], input[type="number"]{
+    border: 1px solid #d6dbe2;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px 12px;
+    font-weight: 700;
+    outline: none;
+    transition: .5s;
+}
+input::placeholder{
+    color: rgb(198, 198, 198);
+}
+input[type="text"]:focus, input[type="number"]:focus{
+    border: 1px solid rgb(189, 197, 255);
+    box-shadow: 0px 0px 12px 0px rgba(185, 185, 185, 0.501) inset;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
